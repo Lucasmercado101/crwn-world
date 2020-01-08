@@ -12,6 +12,7 @@ import Header from "./components/header/header";
 import CheckoutPage from "./pages/checkout/checkout";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentuser } from "./redux/user/user.selectors";
 
