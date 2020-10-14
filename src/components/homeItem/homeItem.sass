@@ -1,0 +1,46 @@
+.home-item
+    cursor: pointer
+    width: 100%
+    border: thin solid rgb(140, 130, 115)
+    position: relative
+    display: grid
+    place-items: center
+    overflow: hidden
+    &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: center
+    &:hover
+        & .home-item__image
+            transform: scale(1.1)
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95)
+
+        & .home-item-content
+            opacity: 0.9
+    &--small
+        height: 240px
+    &--big
+        height: 378px
+    &:last-of-type
+        margin-bottom: 0
+
+.home-item-content
+    position: absolute
+    border: thin solid rgb(140, 130, 115)
+    background: #181a1b
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 15px 25px
+    color: rgb(185, 179, 170)
+    opacity: .7
+    &__title
+        font-weight: 700
+        font-size: 1.4rem
+        margin-bottom: 6px
+        text-transform: uppercase
+
+    &__subtitle
+        font-weight: lighter

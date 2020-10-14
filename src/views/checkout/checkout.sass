@@ -1,0 +1,53 @@
+.checkout
+    display: flex
+    align-items: center
+    flex-direction: column
+    &__table
+        width: 70%
+        color: white
+        border-collapse: collapse
+        font-size: 28px
+        border-bottom: thin solid white
+    &__total
+        color: white
+        width: 70%
+        margin: auto
+        text-align: end
+        padding: 15px
+        font-size: 35px
+    &__test-warning
+        color: #ff2626
+        font-size: 30px
+        margin-bottom: 25px
+
+.checkout-header-row
+    border-bottom: 1px solid white
+    &__header
+        font-weight: normal
+        padding-bottom: 10px
+        font-family: "Open Sans Condensed"
+        text-align: left
+
+.checkout-btn
+    color: white
+    background: none
+    cursor: pointer
+    border: none
+
+.checkout-table-item
+    &__btn
+        display: grid
+        place-items: center
+        transform: scale(1.4)
+    &__quantity
+        padding: 15px
+        display: flex
+        flex-direction: row
+        button
+            background: none
+            cursor: pointer
+            border: none
+            color: white
+            width: 30px
+        *
+            margin-right: 5px

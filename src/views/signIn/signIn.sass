@@ -1,0 +1,62 @@
+@import "../../vars"
+
+.sign-in-register
+    display: flex
+    flex-direction: row
+    width: 100%
+    padding: 50px 10%
+
+.form
+    &__header
+        color: white
+        h2,h3
+            margin-bottom: 15px
+            font-weight: 500
+
+.register
+    justify-self: flex-end
+    width: 30%
+    margin-left: auto
+    margin-bottom: 25px
+
+.sign-in
+    width: 40%
+    margin-bottom: 25px
+
+.form-btn
+    display: block
+    cursor: pointer
+    background: #eee
+    padding: 15px 50px
+    color: black
+    border: none
+    font-weight: bold
+    font-family: "Open Sans Condensed"
+    font-size: 20px
+    text-align: center
+    text-transform: uppercase
+    margin: auto
+    white-space: nowrap
+    &:hover
+        background: #111
+        color: white
+        outline: thin solid white
+    &--blue
+        color: white
+        background: rgb(66,133,244)
+        &:hover
+            background: #366bc0
+            outline: none
+
+.form-buttons-container
+    display: flex
+    flex-direction: row
+
+    .form-btn:last-of-type
+        margin-left: 15px
+
+@media (max-width: $breakpoint-medium)
+    .sign-in-register
+        flex-direction: column
+        .sign-in, .register
+            width: 100%

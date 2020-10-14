@@ -1,0 +1,44 @@
+@import "../../vars"
+.header
+  height: 70px
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  height: 90px
+  padding: 0 75px
+  padding-top: 40px
+  margin-bottom: 25px
+
+  &__logo-container
+    height: 100%
+    width: 70px
+    display: grid
+    place-items: center
+    *
+      width: 100%
+
+  .header-options
+    width: 50%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    text-transform: uppercase
+
+    &__option
+      font-size: 18px
+      text-transform: uppercase
+      font-family: "Open Sans Condensed"
+      background: none
+      border: none
+      color: white
+      white-space: nowrap
+      padding: 10px 15px
+      cursor: pointer
+
+@media (max-width: $breakpoint-small)
+  .header
+    padding: 0 25px
+    padding-top: 40px

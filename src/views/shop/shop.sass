@@ -1,0 +1,40 @@
+@import "../../vars"
+.shop
+    padding: 0 60px
+    padding-top: 20px
+
+.shop-items-category
+    &__items
+        display: flex
+        div
+            margin-right: 15px
+
+.shop-items-category-header
+    margin-bottom: 19px
+    display: flex
+    flex-direction: row
+    align-items: baseline
+    font-size: 16px
+    &__title
+        margin-right: 12px
+        font-size: 1.9em
+        text-transform: uppercase
+        color: white
+        &--center
+            text-align: center
+    &__subtitle
+        color: #ccc
+        font-size: 1em
+    &__gt
+        vertical-align: middle
+
+@media (max-width: $breakpoint-medium)
+    .shop-items-category-header
+        flex-direction: column
+        align-items: center
+        font-size: 24px
+    .shop-items-category
+        &__items
+            flex-direction: column
+        div
+            margin-bottom: 15px
