@@ -30,7 +30,6 @@
 I originally made this website to learn React, Redux and Firestore. I later rebuild it from scratch with react hooks so that the code is improved.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [ReactJS](https://reactjs.org)
 * [TypeScript](https://www.typescriptlang.org)
 * [Firebase](https://firebase.google.com)
